@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KarDoors — межкомнатные двери МДФ</title>
+<meta name="description" content="KarDoors — межкомнатные двери из МДФ с наличником в комплекте. Каталог, три размера, заказ онлайн.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="logo" href="#top">Kar<span>Doors</span></a>
+    <nav class="nav">
+      <a href="#catalog">Каталог</a>
+      <a href="#why">Преимущества</a>
+      <a href="#how">Как заказать</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="phone" href="tel:+998913897987">+998 91 389 79 87</a>
+    <button class="cartbtn" id="openCart" aria-label="Корзина">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+      <span class="badge" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero__in">
+      <div class="hero__text">
+        <p class="eyebrow">Межкомнатные двери из МДФ</p>
+        <h1>Двери, которые завершают интерьер</h1>
+        <p class="lead">Классические филёнчатые модели в светлых оттенках. Наличник — в комплекте. Три размера под любой проём.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#catalog">Смотреть каталог</a>
+          <a class="btn btn--ghost" href="tel:+998913897987">Позвонить</a>
+        </div>
+      </div>
+      <div class="hero__img">
+        <img src="img/nrsht4-2026.jpg" alt="Дверь NRSHT 4-2026">
+        <img src="img/nrt3.jpg" alt="Дверь NRT 3">
+      </div>
+    </div>
+  </section>
+
+  <section class="facts">
+    <div class="wrap facts__in">
+      <div><b>8</b><span>моделей в каталоге</span></div>
+      <div><b>3</b><span>стандартных размера</span></div>
+      <div><b>МДФ</b><span>0,6 и 0,8</span></div>
+      <div><b>+ наличник</b><span>входит в комплект</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="catalog">
+    <div class="wrap">
+      <h2>Каталог</h2>
+      <p class="sub">Выберите модель, размер и сторону открывания — добавьте в корзину и оформите заявку.</p>
+      <div class="filters" id="filters">
+        <button class="chip is-on" data-f="all">Все</button>
+        <button class="chip" data-f="nrt">NRT</button>
+        <button class="chip" data-f="nrsht">NRSHT (со штапиком)</button>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="sec sec--alt" id="why">
+    <div class="wrap">
+      <h2>Почему KarDoors</h2>
+      <div class="cards">
+        <article><h3>Наличник в комплекте</h3><p>Не нужно докупать — всё для установки уже входит в цену двери.</p></article>
+        <article><h3>Три размера</h3><p>2,05×1,20, 2,05×0,88 и 2,05×0,68 м: подойдут для комнат, ванных и кладовых.</p></article>
+        <article><h3>Прочный МДФ</h3><p>Толщина полотна 0,6 или 0,8 в зависимости от модели.</p></article>
+        <article><h3>Фурнитура</h3><p>Стильные чёрные ручки с замком подчёркивают классический профиль двери.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="how">
+    <div class="wrap">
+      <h2>Как заказать</h2>
+      <ol class="steps">
+        <li><b>Выберите</b><span>модель, размер и сторону открывания</span></li>
+        <li><b>Оформите заявку</b><span>имя и телефон — больше ничего не нужно</span></li>
+        <li><b>Мы свяжемся</b><span>уточним детали, цену и сроки доставки</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec sec--dark" id="contacts">
+    <div class="wrap contacts">
+      <div>
+        <h2>Контакты</h2>
+        <p class="sub">Звоните или пишите — ответим быстро.</p>
+        <a class="big" href="tel:+998913897987">+998 91 389 79 87</a>
+        <div class="hero__cta">
+          <a class="btn" href="tel:+998913897987">Позвонить</a>
+          <a class="btn btn--ghost-l" href="https://t.me/+998913897987" target="_blank" rel="noopener">Написать в Telegram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><div class="wrap">© <span id="year"></span> KarDoors. Межкомнатные двери.</div></footer>
+
+<!-- Корзина -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__head">
+    <h3>Ваш заказ</h3>
+    <button class="x" id="closeCart" aria-label="Закрыть">×</button>
+  </div>
+  <div class="drawer__body">
+    <div id="cartList"></div>
+    <form id="orderForm" novalidate>
+      <label>Имя<input name="name" required maxlength="80" autocomplete="name" placeholder="Как к вам обращаться"></label>
+      <label>Телефон<input name="phone" type="tel" required maxlength="30" autocomplete="tel" placeholder="+998 __ ___ __ __"></label>
+      <label>Адрес доставки (по желанию)<input name="address" maxlength="200" autocomplete="street-address" placeholder="Город, улица, дом"></label>
+      <label>Комментарий (по желанию)<textarea name="comment" rows="2" maxlength="500" placeholder="Пожелания по цвету, срокам…"></textarea></label>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn btn--full" id="submitBtn" type="submit">Отправить заявку</button>
+      <p class="note">Цену и сроки менеджер подтвердит по телефону.</p>
+    </form>
+  </div>
+</aside>
+
+<div class="done" id="done" hidden>
+  <div class="done__box">
+    <div class="ok">✓</div>
+    <h3>Заявка отправлена!</h3>
+    <p>Мы скоро свяжемся с вами по указанному номеру.</p>
+    <button class="btn" id="doneBtn">Отлично</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
