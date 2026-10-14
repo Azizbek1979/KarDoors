@@ -9,6 +9,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+/* Фото в каталоге: дверь видна целиком, высота рамки подстраивается под фото */
+.card__img{aspect-ratio:auto!important;height:auto!important;padding:8px!important;display:block!important}
+.card__img img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:auto!important;object-fit:contain!important;transform:none}
+.card__img:hover img{transform:scale(1.02)!important}
+</style>
 </head>
 <body>
 
@@ -21,7 +27,7 @@
       <a href="#how">Как заказать</a>
       <a href="#contacts">Контакты</a>
     </nav>
-    <a class="phone" href="tel:+998913897987">+998 91 389 79 87</a>
+    <a class="phone" href="tel:+998917700079">+998 91 770 00 79</a>
     <button class="cartbtn" id="openCart" aria-label="Корзина">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
       <span class="badge" id="cartCount">0</span>
@@ -38,7 +44,7 @@
         <p class="lead">Классические филёнчатые модели в светлых оттенках. Наличник — в комплекте. Три размера под любой проём.</p>
         <div class="hero__cta">
           <a class="btn" href="#catalog">Смотреть каталог</a>
-          <a class="btn btn--ghost" href="tel:+998913897987">Позвонить</a>
+          <a class="btn btn--ghost" href="tel:+998917700079">Позвонить</a>
         </div>
       </div>
       <div class="hero__img">
@@ -81,7 +87,6 @@
       </div>
     </div>
   </section>
-
   <section class="sec" id="how">
     <div class="wrap">
       <h2>Как заказать</h2>
@@ -98,10 +103,10 @@
       <div>
         <h2>Контакты</h2>
         <p class="sub">Звоните или пишите — ответим быстро.</p>
-        <a class="big" href="tel:+998913897987">+998 91 389 79 87</a>
+        <a class="big" href="tel:+998917700079">+998 91 770 00 79</a>
         <div class="hero__cta">
-          <a class="btn" href="tel:+998913897987">Позвонить</a>
-          <a class="btn btn--ghost-l" href="https://t.me/+998913897987" target="_blank" rel="noopener">Написать в Telegram</a>
+          <a class="btn" href="tel:+998917700079">Позвонить</a>
+          <a class="btn btn--ghost-l" href="https://t.me/+998917700079" target="_blank" rel="noopener">Написать в Telegram</a>
         </div>
       </div>
     </div>
@@ -121,7 +126,7 @@
     <div id="cartList"></div>
     <form id="orderForm" novalidate>
       <label>Имя<input name="name" required maxlength="80" autocomplete="name" placeholder="Как к вам обращаться"></label>
-      <label>Телефон<input name="phone" type="tel" required maxlength="30" autocomplete="tel" placeholder="+998 __ ___ __ __"></label>
+      <label>Телефон<input name="phone" type="tel" required maxlength="30" autocomplete="tel" placeholder="+998  _  "></label>
       <label>Адрес доставки (по желанию)<input name="address" maxlength="200" autocomplete="street-address" placeholder="Город, улица, дом"></label>
       <label>Комментарий (по желанию)<textarea name="comment" rows="2" maxlength="500" placeholder="Пожелания по цвету, срокам…"></textarea></label>
       <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -140,6 +145,8 @@
     <button class="btn" id="doneBtn">Отлично</button>
   </div>
 </div>
+
+<div class="lb" id="lb" hidden><img alt=""><p></p></div>
 
 <div class="toast" id="toast"></div>
 
