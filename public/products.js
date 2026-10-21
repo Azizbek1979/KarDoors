@@ -9,6 +9,8 @@ window.PRODUCTS = [
     desc: 'Строгий лаконичный дизайн: две филёнки с чёткой геометрией.', tag: '', price: null },
   { id: 'nrt4', model: 'NRT 4', img: 'img/nrt4.jpg', material: 'МДФ 0,8', frame: 'Наличник в комплекте',
     desc: 'Белая дверь с высокой верхней и низкой нижней филёнкой, чёрная фурнитура.', tag: '', price: null },
+  { id: 'nrt5', model: 'NRT 5', img: 'img/nrt5.jpg', material: 'МДФ 0,8', frame: 'Наличник в комплекте',
+    desc: 'Светлая дверь с рельефными филёнками и чёрной фурнитурой.', tag: '', price: null },
   { id: 'nrt6', model: 'NRT 6', img: 'img/nrt6.jpg', material: 'МДФ 0,6', frame: 'Наличник в комплекте',
     desc: 'Лёгкая и доступная модель с мягким рельефом филёнок.', tag: 'Выгодно', price: null },
   { id: 'nrsht4', model: 'NRSHT 4', img: 'img/nrsht4.jpg', material: 'МДФ 0,8', frame: 'Штапик 4 см, наличник в комплекте',
